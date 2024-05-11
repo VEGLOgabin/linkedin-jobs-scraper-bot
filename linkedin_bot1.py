@@ -78,10 +78,32 @@ def scrape_linkedin_jobs(job_name):
             benefits = None
         #######
         print("\n")
+        
     
-    # Close the webdriver
-    driver.quit()
+    # Ask user to close the driver or not
+    close_or_not = input("Enter 'yes' to close the driver or 'no' to keep it open : ")
+    
+    if  close_or_not == 'yes':
+        # Close the webdriver
+        driver.quit()
+    elif  close_or_not == 'no':
+        # Ask user for job name input
+        job_name = input("Enter the job name: ")
+        
+        # Close older driver
+        driver.quit()
 
+        # Scrape LinkedIn jobs based on the user input
+        scrape_linkedin_jobs(job_name)
+    
+    else:
+        print("Bad input")
+        # Close the webdriver
+        driver.quit()
+        
+        
+        
+        
 # Ask user for job name input
 job_name = input("Enter the job name: ")
 
