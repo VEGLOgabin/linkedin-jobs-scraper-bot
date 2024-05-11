@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-# url = "https://www.linkedin.com/jobs/"
+
 url = "https://www.linkedin.com/jobs/search"
 
 def scrape_linkedin_jobs(job_name):
