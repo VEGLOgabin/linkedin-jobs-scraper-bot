@@ -7,6 +7,11 @@ linkedin jobs scraper bot
 ### **Overview**
 This script automates the process of scraping job listings from LinkedIn using Selenium. It allows users to search for job listings based on specific keywords and retrieves information such as job title, company name, location, posting time, company page link, job URL, and benefits.
 
+![](code.png)
+
+
+![](data.png)
+
 ### **Setup**
 Ensure you have Python installed along with the necessary libraries like `selenium` and a WebDriver for your browser (e.g., GeckoDriver for Firefox).
 
